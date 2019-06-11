@@ -3,6 +3,7 @@
 body {
 	background-color: lightgray;
 	font-family: 'Montserrat', sans-serif;
+	text-align: center;
 }
 
 .game {
@@ -28,4 +29,23 @@ body {
 	align-items: center;
 	justify-content: center;
 	display: flex;
+}
+
+.restart {
+	font-size: 1.3rem;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 2em;
+	padding: 1em 1.5em;
+	border: 2px solid darkgreen;
+	background-color: white;
+	opacity: 0;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.restart:hover {
+	background: darkolivegreen;
+	color: white;
+	transform: scale(1.1);
 }

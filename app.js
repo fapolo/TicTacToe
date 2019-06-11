@@ -28,6 +28,8 @@ const ticTacToe = {
 	//controla se o jogo acabou
 	gameOver: false,
 
+	restartButton: document.querySelector(".restart"),
+
 	//passa o div game para uso
 	init: function(container) {
 		this.gameContainer = container;
@@ -60,6 +62,7 @@ const ticTacToe = {
 	finishGame: function() {
 		this.gameOver = true;
 		console.log("=== GAME OVER ===");
+		this.restartButton.style.opacity = 1;
 	},
 
 	checkWin: function(player) {
@@ -74,10 +77,12 @@ const ticTacToe = {
 		return -1;
 	},
 
+	//função para iniciar/reiniciar jogo
 	start: function() {
 		this.board.fill("");
 		this.draw();
 		this.gameOver = false;
+		this.restartButton.style.opacity = 0;
 	},
 
 	//Desenha os quadrados do tabuleiro
