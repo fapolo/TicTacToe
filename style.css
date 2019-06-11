@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+body {
+	background-color: lightgray;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.game {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 450px;
+	margin-left: 50%;
+	transform: translate(-50%);
+	border: 2px solid darkgreen;
+	border-radius: 1%;
+}
+
+.game div {
+	height: 150px;
+	background: darkolivegreen;
+	border: 3px solid darkgreen;
+
+	color: white;
+	font-weight: bold;
+	font-size: 5rem;
+
+	/*centralizar alinhamento*/
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
